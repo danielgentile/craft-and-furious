@@ -1,0 +1,7 @@
+{
+  "buttons": ["bold", "italic", "ul", "ol", "sup", "sub", "link"],
+  "plugins": ["specialchars", "custom"],
+  "linkNewTab": true,
+  "toolbarFixed": true,
+  "minHeight": "200px"
+}

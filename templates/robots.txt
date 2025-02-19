@@ -1,0 +1,15 @@
+{% set env = getenv('CRAFT_ENVIRONMENT') %}
+{% if env == 'production' %}
+# robots.txt for {{ siteUrl }}
+Sitemap: {{ siteUrl }}sitemap.xml
+User-agent: *
+Disallow: /asset-transforms/
+Disallow: /cpresources/
+Disallow: /vendor/
+Disallow: /.env
+Disallow: /admin/
+Disallow: /admin
+{% else %}
+User-agent: *
+Disallow: /
+{% endif %}
