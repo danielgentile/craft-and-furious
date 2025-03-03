@@ -75,6 +75,7 @@ return [
 
    // Dev environment settings
    'dev' => [
+      'enableCsrfProtection' => false,
       // Dev Mode (see https://craftcms.com/guides/what-dev-mode-does)
       'devMode' => true,
       // This should be set to true for development and staging environments. Default value being false.

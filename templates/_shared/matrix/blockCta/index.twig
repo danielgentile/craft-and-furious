@@ -1,0 +1,8 @@
+{% set ctaEntry = item.ctaEntry %}
+
+{{ include('_shared/components/cta',
+    {
+        "ctaEntry": ctaEntry,
+    },
+    ignore_missing = true)
+}}

@@ -1,0 +1,19 @@
+columnSuffix: ykjomnop
+contentColumnType: text
+fieldGroup: 4e72d0d2-9132-4c33-aa32-0bd73e9e0356 # shared
+handle: sharedTitle1
+instructions: null
+name: Titre
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

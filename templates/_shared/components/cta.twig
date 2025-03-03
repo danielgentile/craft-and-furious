@@ -1,0 +1,24 @@
+{% set ctaEntry = ctaEntry|default(null) %}
+
+{% if ctaEntry|length %}
+    {% set ctaEntry = ctaEntry[0] %}
+    <div class="py-20 bg-primary text-center mb-full">
+        <div class="container">
+            <div class="lg:w-2/3 mx-auto">
+                <h2 class="title-02 text-secondary-400 mb-6">{{ ctaEntry.sharedTitle1|default(ctaEntry.title) }}</h2>
+                {% if ctaEntry.sharedTextLight1 %}
+                    <div class="wysiwyg text-white">
+                        {{ ctaEntry.sharedTextLight1 }}
+                    </div>
+                {% endif %}
+                {% if ctaEntry.sharedLink1|length and ctaEntry.sharedLink1[0].url %}
+                    <div class="mt-8">
+                        <a href="{{ ctaEntry.sharedLink1[0].url }}" target="{{ ctaEntry.sharedLink1[0].target ? '_blank' : '_self' }}" class="btn">
+                            {{ ctaEntry.sharedLink1[0].title }}
+                        </a>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endif %}

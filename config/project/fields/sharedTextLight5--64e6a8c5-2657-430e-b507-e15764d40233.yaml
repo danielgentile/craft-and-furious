@@ -1,0 +1,28 @@
+columnSuffix: bngwckyk
+contentColumnType: text
+fieldGroup: 4e72d0d2-9132-4c33-aa32-0bd73e9e0356 # shared
+handle: sharedTextLight5
+instructions: null
+name: Texte
+searchable: true
+settings:
+  availableTransforms: ''
+  availableVolumes:
+    - ca2a274d-ce21-46a0-81e5-cd4dba43a25a # Documents
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: light.json
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: site
+type: craft\redactor\Field

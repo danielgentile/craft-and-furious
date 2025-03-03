@@ -1,0 +1,21 @@
+{% set image = item.textImgImages %}
+{% set title = item.textImgTitle %}
+{% set text = item.textImgText %}
+{% set link = item.textImgLink %}
+{% set linkLabel = link|length ? link[0].title : null %}
+{% set linkUrl = link|length ? link[0].url : null %}
+{% set linkTarget = link|length ? link[0].target : null %}
+{% set positioning = item.textImgPosition %}
+
+{{ include('_shared/components/img-text.twig',
+    {
+        "imgTextImage": image|length ? image : null,
+        "imgTextTitle": title,
+        "imgTextText": text,
+        "imgTextLinkLabel": linkLabel,
+        "imgTextLinkUrl": linkUrl,
+        "imgTextLinkTarget": linkTarget,
+        "imgTextPositioning": positioning,
+    },
+    ignore_missing = true)
+}}

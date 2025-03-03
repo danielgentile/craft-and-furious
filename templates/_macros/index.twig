@@ -30,3 +30,50 @@
 {%- macro phoneLabel(phoneNumber, extension = null) -%}
    {{ phoneNumber }}{%- if extension -%}{{ ' ext: '|t ~ extension }}{%- endif -%}
 {%- endmacro -%}
+
+{#
+  MACRO FOR ICON AND INFO
+   @param {string} label
+   @param {string} text
+   @param {string} iconName
+   @param {string} link
+#}
+
+{% macro linkIcon(label, content, iconName, link, linkTarget = true, iconOnly = false) %}
+   {% set textHtml = "" %}
+   {# define the tag for if link or not #}
+   {% if link is not null %}
+      {% if content %}
+         {% 
+            set textHtml = tag('a', {
+               class: "",
+               href: link,
+               target: linkTarget ? "_blank" : "_self",
+               rel: "noopener noreferrer",
+               text: content
+            }) 
+         %}
+      {% endif %}
+   {% else %}
+      {% if content %}
+         {% 
+            set textHtml = tag('div', {
+               text: content
+            }) 
+         %}
+      {% endif %}
+   {% endif %}
+
+   {% if link is not null and (label or content) %}
+      <a class="group flex items-center" href="{{ link }}" rel="noopener noreferrer" target="{{ linkTarget ? "_blank" : "_self" }}">
+         {% if iconName is not null %}
+            <div class="flex items-center justify-center rounded-lg border border-secondary-200 group-hover:bg-secondary-200 w-12 h-12 mr-5 transition-colors">
+               <svg class="text-primary-900 w-8 h-8 icon__{{ iconName }}"><use xlink:href="#ic-{{ iconName }}"></use></svg>
+            </div>
+         {% endif %}
+         <div class="flex-1">
+            {{ content }}
+         </div>
+      </a>
+   {% endif %}
+{% endmacro %}

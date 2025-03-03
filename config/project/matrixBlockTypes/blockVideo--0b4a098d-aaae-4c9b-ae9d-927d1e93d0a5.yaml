@@ -1,0 +1,94 @@
+field: eafc472d-c76f-4a79-a9f2-55fba89aa065 # Contenu flexible
+fieldLayouts:
+  82884359-59a5-48af-9af4-873168390d3f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: ab29d8d4-e2ba-446a-8841-f53efeede83b # Vidéo
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 627ba836-2d9f-4f66-a40d-033c92e50a0c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2133a69a-1d77-4a0e-b10c-84a0ade4445d # Source
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e3583963-980c-435d-94e7-d28c418c81f2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 256e34d5-e5e3-4573-9778-b1e46fa469e1
+        userCondition: null
+fields:
+  2133a69a-1d77-4a0e-b10c-84a0ade4445d: # Source
+    columnSuffix: xgnpymmc
+    contentColumnType: string(7)
+    fieldGroup: null
+    handle: videoSource
+    instructions: null
+    name: Source
+    searchable: false
+    settings:
+      columnType: null
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - YouTube
+            -
+              - value
+              - youtube
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Vimeo
+            -
+              - value
+              - vimeo
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\RadioButtons
+  ab29d8d4-e2ba-446a-8841-f53efeede83b: # Vidéo
+    columnSuffix: guriublg
+    contentColumnType: text
+    fieldGroup: null
+    handle: videoUrl
+    instructions: "Code dans l'URL d'une vidéo YouTube.\r\nEx: Pour le lien \"https://youtu.be/ScMzIvxBSi4&quot;, le code serait ScMzIvxBSi4."
+    name: Vidéo
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+handle: blockVideo
+name: Vidéo
+sortOrder: 6

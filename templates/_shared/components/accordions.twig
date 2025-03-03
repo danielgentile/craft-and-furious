@@ -1,0 +1,48 @@
+{# PARAMETERS WHEN INCLUDE
+
+@param {bool} accordionsBackdrop
+@param {string} spacing
+@param {number} loopIndex
+@param {string} accordionsTitle
+@param {string} accordionsContent
+
+#}
+
+
+{% if spacing is not defined %}
+   {% set spacing = ((item.next is defined) and (item.next is not null) and (item.next.accordions == true)) ? "mb-quarter" : "mb-full" %}
+{% endif %}
+
+{% set loopIndex = loop.index is defined ? loop.index : 'index' %}
+
+{% set accordionsBackdrop = accordionsBackdrop|default(false) %}
+<div class="container accordions-group-wrapper">
+   <div class="border-b border-[#c3c6cc] {{ spacing }}" data-fn-accordion>
+      <h3>
+         <button 
+            class="title-05 flex items-center py-3 justify-between text-left w-full"
+            data-fn-target="ac-{{ loopIndex }}"
+            aria-expanded="false" 
+            aria-controls="ac-{{ loopIndex }}"
+         >
+            {%- block accordionsHeading %}{# block accordionsHeading - override with embed if needed #}
+               {{ accordionsTitle|default('Learn more'|t) }}
+            {% endblock -%}
+            <span class="flex justify-end flex-1">
+               <span class="ml-4">
+                  <svg class="h-4 w-4 parent-is-open:rotate-45 transition-transform"><use xlink:href="#ic-plus"></use></svg>
+               </span>
+            </span>
+         </button>
+      </h3>
+      <div id="ac-{{ loopIndex }}" class="h-0 overflow-hidden transition-height duration-300">{# do not style this div #}
+         <div class="py-quarter pt-0">
+            {%- block accordionsContent %}{# block accordionsContent - override with embed if needed #}
+               {% if accordionsContent %}
+                  <div>{{ accordionsContent }}</div>
+               {% endif %}
+            {% endblock -%}
+         </div>
+      </div>
+   </div>
+</div>

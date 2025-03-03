@@ -1,0 +1,25 @@
+{% set imageGallery = item.galleryImages %}
+{% set mosaic = item.galleryMosaic %}
+
+{% if imageGallery|length %}
+    <div class="bg-secondary py-12 mb-full">
+        <div class="container">
+            {% if mosaic %}
+                {{ include('_shared/atoms/mosaic.twig',
+                    {
+                        "imageMosaic": imageGallery,
+                    },
+                    ignore_missing = true)
+                }}
+            {% else %}
+                {{ include('_shared/atoms/gallery.twig',
+                    {
+                        "gallery": imageGallery,
+                    },
+                    ignore_missing = true)
+                }}
+            {% endif %}
+        </div>
+    </div>
+    <div class="-mb-quarter"></div>
+{% endif %}

@@ -1,0 +1,67 @@
+columnSuffix: foagvsvv
+contentColumnType: text
+fieldGroup: 4e72d0d2-9132-4c33-aa32-0bd73e9e0356 # shared
+handle: sharedLink4
+instructions: null
+name: Lien
+searchable: true
+settings:
+  addRowLabel: 'Ajouter un lien'
+  columnType: text
+  columns:
+    __assoc__:
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - Titre
+            -
+              - handle
+              - title
+            -
+              - width
+              - '33'
+            -
+              - type
+              - singleline
+      -
+        - col2
+        -
+          __assoc__:
+            -
+              - heading
+              - Lien
+            -
+              - handle
+              - url
+            -
+              - width
+              - '33'
+            -
+              - type
+              - url
+      -
+        - col3
+        -
+          __assoc__:
+            -
+              - heading
+              - 'Ouvrir dans un nouvel onglet?'
+            -
+              - handle
+              - target
+            -
+              - width
+              - '33'
+            -
+              - type
+              - lightswitch
+  defaults: null
+  maxRows: 1
+  minRows: null
+  staticRows: false
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Table

@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 4e72d0d2-9132-4c33-aa32-0bd73e9e0356 # shared
+handle: sharedMainMatrix
+instructions: null
+name: 'Contenu flexible'
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_sharedmainmatrix}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,17 @@
+{% set module = module ?? entry.sharedMainMatrix
+   .with([
+      'blockCta:ctaEntry',
+      'blockDocsLinks:docsLinksDocuments',
+      'blockGallery:galleryImages',
+      'blockTextImg:textImgImages',
+   ])
+   .all() 
+%}
+{% if module|length %}
+   {% for i, item in module %}
+      <!-- Matrix: {{ item.type }} -->
+      <div>
+         {{ include('_shared/matrix/' ~ item.type ~ '/index.twig', ignore_missing = true) }}
+      </div>
+   {% endfor %}
+{% endif %}

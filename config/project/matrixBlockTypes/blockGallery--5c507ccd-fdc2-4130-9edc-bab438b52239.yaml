@@ -1,0 +1,92 @@
+field: eafc472d-c76f-4a79-a9f2-55fba89aa065 # Contenu flexible
+fieldLayouts:
+  12367787-1abe-4b83-8a4b-7e708166da0c:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 99e645b0-0958-419c-91ae-2d09f1e2c385 # Images
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 691a2453-f07e-4cc9-ab9b-a52a45ddb38b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: dc3bf0d7-587d-4f8a-bf3b-9ab8d03adf22 # Transformer en mosaic?
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 61613d45-deca-43bc-871a-5407024788b2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: dfc427d4-74bd-4c1f-a37a-50b30cf790f6
+        userCondition: null
+fields:
+  99e645b0-0958-419c-91ae-2d09f1e2c385: # Images
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: galleryImages
+    instructions: null
+    name: Images
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:00548086-7b2f-44f0-a0e4-c9d91fcaae9e' # Images
+      defaultUploadLocationSubpath: content
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: null
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:ca2a274d-ce21-46a0-81e5-cd4dba43a25a' # Documents
+      restrictedLocationSubpath: null
+      selectionLabel: 'Ajouter une image'
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:00548086-7b2f-44f0-a0e4-c9d91fcaae9e' # Images
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  dc3bf0d7-587d-4f8a-bf3b-9ab8d03adf22: # Transformer en mosaic?
+    columnSuffix: fjzggzeo
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: galleryMosaic
+    instructions: null
+    name: 'Transformer en mosaic?'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+handle: blockGallery
+name: 'Galerie d''images'
+sortOrder: 3

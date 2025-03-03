@@ -1,0 +1,95 @@
+fieldLayouts:
+  af70adaa-ccff-4295-80b0-385facd16d3d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: bd5a8149-c882-47af-8310-5014240e251f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            heading: Contenu
+            type: craft\fieldlayoutelements\Heading
+            uid: 34bd7ed6-aa56-4b61-b0c8-a4f2fba738b7
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: eafc472d-c76f-4a79-a9f2-55fba89aa065 # Contenu flexible
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8b200129-7482-42b5-a101-98a72620f997
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 07fd590f-a33d-457f-8a02-5415bf9c66e0
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: d3974314-8390-48bd-af85-f938616558be # SEO Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5dd254e6-8553-4b17-a2c3-cc65d6c8a4af
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9b18697d-2ce6-492b-b628-1a649bb22eaa # SEO Open Graph Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: adf09103-2705-4858-9ebf-533cb2873bff
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 603ee614-89cf-4094-9929-4700a031b912
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: 508c17b2-93a7-492f-8f5f-3aedcc6e0228 # Pages
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

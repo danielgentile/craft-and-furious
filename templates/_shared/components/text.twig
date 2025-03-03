@@ -1,0 +1,42 @@
+{# PARAMETERS WHEN INCLUDE
+
+@param {string} textTitle
+@param {string} textText
+@param {string} textClass
+@param {string} textLinkUrl
+@param {string} textLinkLabel
+@param {bool} textLinkTarget
+
+#}
+
+{# Text #}
+{% set textTitle = textTitle|default(null) %}
+{% set textText = textText|default(null) %}
+
+{# Link #}
+{% set textLinkUrl = textLinkUrl|default(null) %}
+{% set textLinkLabel = textLinkLabel|default(null) %}
+{% set textLinkTarget = textLinkTarget|default(false) %}
+
+{# Extra #}
+{% set textClass = textClass|default("container mb-full") %}
+
+{% if textTitle or textText or textLinkUrl %}
+    <div class="{{ textClass }}">
+        {% if textTitle %}
+            <h2 class="title-02 mb-6">{{ textTitle }}</h2>
+        {% endif %}
+
+        {% if textText %}
+            <div class="wysiwyg">{{ textText }}</div>
+        {% endif %}
+
+        {% if textLinkUrl or textLinkLabel %}
+            <div class="mt-8">
+                <a class="btn-outline btn-outline--primary" href="{{ textLinkUrl }}" target="{{ textLinkTarget ? '_blank' : '_self' }}">
+                    {{ textLinkLabel }}
+                </a>
+            </div>
+        {% endif %}
+    </div>
+{% endif %}

@@ -18,6 +18,7 @@ return [
    "Categories" => "Catégories",
    "All news" => "Toute l’actualité",
    "There are no news in this category at the moment." => "Il n’y a pas de nouvelle dans cette catégorie pour l’instant.",
+   "Documents and links" => "Documents et liens",
    /* 404 */
    "Error 404" => "Erreur 404",
    "Sorry, wrong path!" => "Désolé, mauvais chemin!",

@@ -1,0 +1,24 @@
+{# PARAMETERS WHEN INCLUDE
+
+@param {string} blockVideoLink
+@param {string} blockVideoSource
+@param {string} blockVideoTranscript
+
+#}
+
+{% set video = item.videoUrl|default(null) %}
+{% set source = item.videoSource|default(null) %}
+
+{# !important! check lazy iframe #} 
+
+{% if video|length %}
+   <div class="">
+      {{ include('_shared/atoms/video.twig',
+         {
+            "video": video,
+            "source": source,
+         },
+         ignore_missing = true)
+      }}
+   </div>
+{% endif %}

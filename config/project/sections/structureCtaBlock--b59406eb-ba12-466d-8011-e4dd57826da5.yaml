@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+handle: structureCtaBlock
+name: 'Appel à l''action'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  fc2cb4bb-e016-46f9-a830-653496da88d7: # Français
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 1
+  uid: 99ef20b3-74fd-4297-9cac-9b8105304910
+type: structure

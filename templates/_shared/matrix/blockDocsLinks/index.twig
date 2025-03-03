@@ -1,0 +1,24 @@
+{% import '_macros' as macros %}
+
+{% set documents = item.docsLinksDocuments %}
+{% set links = item.docsLinksLinks %}
+
+{% if documents|length or links|length %}
+    <div class="container mb-24">
+        <div class="mb-12 border-b border-secondary-400">
+            <h2 class="title-04 mb-2">{{ 'Documents and links'|t }}</h2>
+        </div>
+        <div class="grid md:grid-cols-2 gap-quarter">
+            {% if documents|length %}
+                {% for doc in documents %}
+                    {{ macros.linkIcon('', doc.title, 'docs', doc.url ) }}
+                {% endfor %}
+            {% endif %}
+            {% if links|length %}
+                {% for link in links %}
+                    {{ macros.linkIcon('', link.title, 'link', link.url, link.target ) }}
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+{% endif %}

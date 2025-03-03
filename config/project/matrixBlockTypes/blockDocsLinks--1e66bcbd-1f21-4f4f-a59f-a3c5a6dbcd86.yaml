@@ -1,0 +1,148 @@
+field: eafc472d-c76f-4a79-a9f2-55fba89aa065 # Contenu flexible
+fieldLayouts:
+  0c49341c-ecea-4b31-9787-1e7251f56afe:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 5e26c56c-3d58-4913-8710-34778b34efb0 # Documents
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3d00a791-0350-4f6c-8924-5d66d8a01169
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 698fcc28-8a7f-41ad-a04d-2b690ff4d9c2 # Liens
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 902a6a33-9a3b-460a-83cd-27520e64cebd
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: dbdc1b48-7dc6-449f-922e-f6c0fb76f1cd
+        userCondition: null
+fields:
+  5e26c56c-3d58-4913-8710-34778b34efb0: # Documents
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: docsLinksDocuments
+    instructions: null
+    name: Documents
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - excel
+        - pdf
+        - text
+        - word
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:ca2a274d-ce21-46a0-81e5-cd4dba43a25a' # Documents
+      defaultUploadLocationSubpath: documents
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: null
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:ca2a274d-ce21-46a0-81e5-cd4dba43a25a' # Documents
+      restrictedLocationSubpath: null
+      selectionLabel: 'Ajouter un document'
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:ca2a274d-ce21-46a0-81e5-cd4dba43a25a' # Documents
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  698fcc28-8a7f-41ad-a04d-2b690ff4d9c2: # Liens
+    columnSuffix: usjbwwqb
+    contentColumnType: text
+    fieldGroup: null
+    handle: docsLinksLinks
+    instructions: null
+    name: Liens
+    searchable: false
+    settings:
+      addRowLabel: 'Ajouter un lien'
+      columnType: text
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Titre
+                -
+                  - handle
+                  - title
+                -
+                  - width
+                  - '33'
+                -
+                  - type
+                  - singleline
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Lien
+                -
+                  - handle
+                  - url
+                -
+                  - width
+                  - '33'
+                -
+                  - type
+                  - url
+          -
+            - col3
+            -
+              __assoc__:
+                -
+                  - heading
+                  - 'Ouvrir dans un nouvel onglet'
+                -
+                  - handle
+                  - target
+                -
+                  - width
+                  - '33'
+                -
+                  - type
+                  - lightswitch
+      defaults: null
+      maxRows: null
+      minRows: null
+      staticRows: false
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Table
+handle: blockDocsLinks
+name: 'Documents et liens utiles'
+sortOrder: 4

@@ -1,0 +1,271 @@
+field: eafc472d-c76f-4a79-a9f2-55fba89aa065 # Contenu flexible
+fieldLayouts:
+  76563d2e-316a-45ea-b0b2-3a3c3e2b9119:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: d8aa590c-b90d-475a-a912-7e992e1f847e # Titre
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 253afa67-f4c0-49c0-95c5-4d5972b1d47e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e62f2e15-68f6-48d6-94ea-945bcf3e9311 # Texte
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b040cde8-20e7-426b-b507-1ad67fd2838a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e1367e57-dd91-4b37-800c-78f7dc738860 # Lien
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d5055eb8-0907-4b85-a40e-e02e0c534a3b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 140379d6-15ce-4188-851c-d2625b19a5e9 # Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8da438be-481b-4316-8165-b271313d9412
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d2250f74-fb1f-40a1-b18b-496b290fa7ec # Position
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7600a44c-aed9-4685-bbea-913b6d0581e2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bbed9d5a-e7a4-48f4-afeb-0d2faa845218 # Transformer en accordéon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f94b681e-f21e-4e96-a5a9-d2a0cd2651fd
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 37cb9a8a-155f-42b6-b89f-f357d1c218ba
+        userCondition: null
+fields:
+  140379d6-15ce-4188-851c-d2625b19a5e9: # Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: textImgImages
+    instructions: null
+    name: Image
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:00548086-7b2f-44f0-a0e4-c9d91fcaae9e' # Images
+      defaultUploadLocationSubpath: content
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:ca2a274d-ce21-46a0-81e5-cd4dba43a25a' # Documents
+      restrictedLocationSubpath: null
+      selectionLabel: 'Ajouter une image'
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:00548086-7b2f-44f0-a0e4-c9d91fcaae9e' # Images
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  bbed9d5a-e7a4-48f4-afeb-0d2faa845218: # Transformer en accordéon
+    columnSuffix: qrjkteau
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: accordions
+    instructions: null
+    name: 'Transformer en accordéon'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  d8aa590c-b90d-475a-a912-7e992e1f847e: # Titre
+    columnSuffix: ixdqnujt
+    contentColumnType: text
+    fieldGroup: null
+    handle: textImgTitle
+    instructions: null
+    name: Titre
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  d2250f74-fb1f-40a1-b18b-496b290fa7ec: # Position
+    columnSuffix: ptlmctoa
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: textImgPosition
+    instructions: null
+    name: Position
+    searchable: false
+    settings:
+      default: false
+      offLabel: 'Texte - Image'
+      onLabel: 'Image - Texte'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  e62f2e15-68f6-48d6-94ea-945bcf3e9311: # Texte
+    columnSuffix: pyyejhez
+    contentColumnType: text
+    fieldGroup: null
+    handle: textImgText
+    instructions: null
+    name: Texte
+    searchable: true
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: light.json
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\redactor\Field
+  e1367e57-dd91-4b37-800c-78f7dc738860: # Lien
+    columnSuffix: quyiuxww
+    contentColumnType: text
+    fieldGroup: null
+    handle: textImgLink
+    instructions: null
+    name: Lien
+    searchable: false
+    settings:
+      addRowLabel: 'Ajouter un lien'
+      columnType: text
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Titre
+                -
+                  - handle
+                  - title
+                -
+                  - width
+                  - '33'
+                -
+                  - type
+                  - singleline
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Lien
+                -
+                  - handle
+                  - url
+                -
+                  - width
+                  - '33'
+                -
+                  - type
+                  - url
+          -
+            - col3
+            -
+              __assoc__:
+                -
+                  - heading
+                  - 'Ouvrir dans un nouvel onglet?'
+                -
+                  - handle
+                  - target
+                -
+                  - width
+                  - '33'
+                -
+                  - type
+                  - lightswitch
+      defaults: null
+      maxRows: 1
+      minRows: null
+      staticRows: false
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Table
+handle: blockTextImg
+name: 'Texte - Image'
+sortOrder: 2

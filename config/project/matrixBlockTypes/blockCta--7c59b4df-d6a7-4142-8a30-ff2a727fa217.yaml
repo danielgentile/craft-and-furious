@@ -1,0 +1,51 @@
+field: eafc472d-c76f-4a79-a9f2-55fba89aa065 # Contenu flexible
+fieldLayouts:
+  60e60373-0c8e-41f5-b71a-d6beadb1ae09:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 979c6314-836d-4d38-b227-00d1ed756969 # Appel à l'action
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5920b33e-a67e-43be-86d5-786dbb630e2f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e9bedf45-3b86-4966-89fe-c42684fd5741
+        userCondition: null
+fields:
+  979c6314-836d-4d38-b227-00d1ed756969: # Appel à l'action
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: ctaEntry
+    instructions: null
+    name: 'Appel à l''action'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      branchLimit: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      selectionLabel: 'Ajouter un appel à l''action'
+      showSiteMenu: false
+      sources:
+        - 'section:b59406eb-ba12-466d-8011-e4dd57826da5' # Appel à l'action
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: blockCta
+name: 'Appel à l''action'
+sortOrder: 5

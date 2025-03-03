@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+handle: structurePages
+name: Pages
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  fc2cb4bb-e016-46f9-a830-653496da88d7: # Français
+    enabledByDefault: true
+    hasUrls: true
+    template: _sections/structure/pages/index
+    uriFormat: '{slug}'
+structure:
+  maxLevels: 1
+  uid: 7c30c943-791a-409d-a6fe-faad0ad79b88
+type: structure

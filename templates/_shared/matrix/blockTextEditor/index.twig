@@ -1,0 +1,40 @@
+{% set title = item.textEditorTitle %}
+{% set text = item.textEditorText %}
+{% set link = item.textEditorLink %}
+{% set linkLabel = link|length ? link[0].title : null %}
+{% set linkUrl = link|length ? link[0].url : null %}
+{% set linkTarget = link|length ? link[0].target : null %}
+{% set accordion = item.accordions %}
+
+{% if accordion == true %}
+    {% embed '_shared/components/accordions.twig' ignore missing with {
+            "accordionsTitle": title|default('Learn more'|t)
+        }
+    %}
+        {% block accordionsContent %}
+            {# textClass: ' ' cancels out container and margin class from generic text component #}
+            {{ include('_shared/components/text.twig',
+                {
+                    "textClass": ' ',
+                    "textTitle": ' ',
+                    "textText": text,
+                    "textLinkLabel": linkLabel,
+                    "textLinkUrl": linkUrl,
+                    "textLinkTarget": linkTarget,
+                },
+                ignore_missing = true)
+            }}
+        {% endblock %}
+    {% endembed %}
+{% else %}
+    {{ include('_shared/components/text.twig',
+        {
+            "textTitle": title,
+            "textText": text,
+            "textLinkLabel": linkLabel,
+            "textLinkUrl": linkUrl,
+            "textLinkTarget": linkTarget,
+        },
+        ignore_missing = true)
+    }}
+{% endif %}

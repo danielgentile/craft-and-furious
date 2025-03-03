@@ -1,0 +1,11 @@
+{#
+# Ceci sert de pont pour le dossier correspondant au handle du type de pages - entry types.
+# Le handle du type de pages dans admin doit correspondre au nom de dossier.
+#
+# Le template index dans chaque dossier est utilisé par défaut, servant notamment pour les archives.
+# Uniquement pour meilleure classification des templates.
+#
+# Voir https://craftcms.com/guides/entry-type-urls pour plus de détails.
+#}
+
+{{ include(["_sections/structure/pages/" ~ entry.type|kebab ~ "/index.twig", "404"], ignore_missing = true) }}

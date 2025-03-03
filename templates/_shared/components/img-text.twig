@@ -1,0 +1,77 @@
+{# PARAMETERS WHEN INCLUDE
+
+@param {array} imgTextImage
+@param {string} imgTextTitle
+@param {string} imgTextText
+@param {string} imgTextLinkUrl
+@param {string} imgTextLinkLabel
+@param {bool} imgTextLinkTarget
+@param {bool} imgTextPositioning
+
+#}
+
+{# Image #}
+{% set imgTextImage = imgTextImage|default(null) %}
+
+{# Text #}
+{% set imgTextTitle = imgTextTitle|default(null) %}
+{% set imgTextText = imgTextText|default(null) %}
+
+{# Link #}
+{% set imgTextLinkUrl = imgTextLinkUrl|default(null) %}
+{% set imgTextLinkLabel = imgTextLinkLabel|default(null) %}
+{% set imgTextLinkTarget = imgTextLinkTarget|default(false) %}
+
+{# Layout #}
+{% set imgTextPositioning = imgTextPositioning|default(false) %}
+
+<div class="mb-full">
+   <div class="container">
+      <div class="mb-half grid {{ imgTextImage|length ? 'lg:grid-cols-2' : '' }} gap-12 items-center">
+         {% block imgTextLeft %}
+            {% if imgTextImage|length %}
+               <div class="{{ imgTextPositioning ? "order-2" : "order-1" }}">
+                  {% if imgTextImage|length %}
+                     <div class="relative lazy-fill aspect-1/1 rounded-2xl">
+                        {{ include("_shared/components/image", {
+                           image: image,
+                           sizes: [
+                              {
+                                 breakpoint: 0,
+                                 width: 90,
+                              },
+                              {
+                                 breakpoint: 768,
+                                 width: 45,
+                              },
+                           ]
+                        }, with_context = false, ignore_missing = true) }}
+                     </div>
+                  {% endif %}
+               </div>
+            {% endif %}
+         {% endblock %}
+         {% block imgTextRight %}
+               <div class="{{ imgTextPositioning ? "order-1" : "order-2" }}">
+                  {% if imgTextTitle %}
+                     <h2 class="title-02 mb-6">
+                        {{ imgTextTitle }}
+                     </h2>
+                  {% endif %}
+                  {% if imgTextText %}
+                     <div class="wysiwyg">
+                        {{ imgTextText }}
+                     </div>
+                  {% endif %}
+                  {% if imgTextLinkUrl or imgTextLinkLabel %}
+                     <div class="mt-9">
+                        <a class="btn-outline btn-outline--primary" href="{{ imgTextLinkUrl }}" target="{{ imgTextLinkTarget ? '_blank' : '_self' }}">
+                           {{ imgTextLinkLabel }}
+                        </a>
+                     </div>
+                  {% endif %}
+            </div>
+         {% endblock %}
+      </div>
+   </div>
+</div>

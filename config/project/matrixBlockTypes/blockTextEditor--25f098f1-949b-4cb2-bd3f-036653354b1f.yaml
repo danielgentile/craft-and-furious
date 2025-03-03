@@ -1,0 +1,194 @@
+field: eafc472d-c76f-4a79-a9f2-55fba89aa065 # Contenu flexible
+fieldLayouts:
+  7b45e6f2-6dde-4a98-871f-c62c2e883fbb:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: dedf661a-8a21-436a-aa80-5799865cf897 # Titre
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4580d7aa-1c5b-4a28-8542-afcb696132ea
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 96dfd863-7ae3-46ef-9af8-2832cd03d9f5 # Texte
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2dbdf227-77b4-4a9e-babd-c41a2718f2d6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f6c79504-6238-4159-acab-af1e951cff91 # Lien
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1b8921f8-b53b-46ca-bb0b-3170929d89a6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d75846a9-8f9c-4c04-88c3-edb6be38cb7c # Transformer en accordéon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2eed245a-bff7-4abc-a2d8-5f12fc43dfdd
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: dca25075-9e5f-4ffa-a192-d6a07d7167c3
+        userCondition: null
+fields:
+  96dfd863-7ae3-46ef-9af8-2832cd03d9f5: # Texte
+    columnSuffix: ujlmmlep
+    contentColumnType: text
+    fieldGroup: null
+    handle: textEditorText
+    instructions: null
+    name: Texte
+    searchable: true
+    settings:
+      availableTransforms: ''
+      availableVolumes:
+        - ca2a274d-ce21-46a0-81e5-cd4dba43a25a # Documents
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: medium.json
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\redactor\Field
+  d75846a9-8f9c-4c04-88c3-edb6be38cb7c: # Transformer en accordéon
+    columnSuffix: xnlozrlh
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: accordions
+    instructions: null
+    name: 'Transformer en accordéon'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  dedf661a-8a21-436a-aa80-5799865cf897: # Titre
+    columnSuffix: ugwuflhu
+    contentColumnType: text
+    fieldGroup: null
+    handle: textEditorTitle
+    instructions: null
+    name: Titre
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  f6c79504-6238-4159-acab-af1e951cff91: # Lien
+    columnSuffix: tbesxhli
+    contentColumnType: text
+    fieldGroup: null
+    handle: textEditorLink
+    instructions: null
+    name: Lien
+    searchable: false
+    settings:
+      addRowLabel: 'Ajouter un lien'
+      columnType: text
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Titre
+                -
+                  - handle
+                  - title
+                -
+                  - width
+                  - '33'
+                -
+                  - type
+                  - singleline
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Lien
+                -
+                  - handle
+                  - url
+                -
+                  - width
+                  - '33'
+                -
+                  - type
+                  - url
+          -
+            - col3
+            -
+              __assoc__:
+                -
+                  - heading
+                  - 'Ouvrir dans un nouvel onglet'
+                -
+                  - handle
+                  - target
+                -
+                  - width
+                  - '33'
+                -
+                  - type
+                  - lightswitch
+      defaults: null
+      maxRows: 1
+      minRows: null
+      staticRows: false
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Table
+handle: blockTextEditor
+name: 'Éditeur de texte'
+sortOrder: 1

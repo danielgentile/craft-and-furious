@@ -1,0 +1,11 @@
+fieldLayouts:
+  3816dc43-d81c-451b-aa16-fb9b8039cb84:
+    tabs:
+      -
+        elementCondition: null
+        name: 'Réglages généraux'
+        uid: 4be42b13-6f44-40bf-9791-695c90db69ec
+        userCondition: null
+handle: globalSettings
+name: 'Réglages généraux'
+sortOrder: 2
