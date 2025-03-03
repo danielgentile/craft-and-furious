@@ -65,15 +65,9 @@
         ]
     },
     "repositories": {
-        "packagist.org": false,
-        "private-packagist": {
-            "type": "composer",
-            "url": "https://repo.packagist.com/danielgentile/"
-        },
-        "0": {
-            "type": "composer",
-            "url": "https://composer.craftcms.com",
-            "canonical": false
+        {
+            "type": "vcs",
+            "url": "https://github.com/danielgentile/craft-and-furious.git"
         }
     }
 }
